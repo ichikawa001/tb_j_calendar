@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>mission_5-1</title>
+<style>
+    .class1{
+        color:red;
+    }
+    .class2{
+        color:blue;
+    }
+</style>
+</head>
+<body>
+<h2>自由設定カレンダー</h2>
+<ul>
+    <li>デフォルトでは、今日を基点としたカレンダーを表示します。</li>
+    <li>「今日」の日付を自由に設定可能です。</li>
+</ul>
+<table frame="box">
+    <caption id="c_head" style="font-size:20px;">カレンダー</caption>
+    <thead>
+        <tr>
+            <th width="40" class="class1">日</th>
+            <th width="40">月</th>
+            <th width="40">火</th>
+            <th width="40">水</th>
+            <th width="40">木</th>
+            <th width="40">金</th>
+            <th width="40" class="class2">土</th>
+        </tr>
+    </thead>
+    <tbody id="c_table">
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+        <tr align="center">
+            <td class="class1">-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td>-</td>
+            <td class="class2">-</td>
+        </tr>
+    </tbody>
+</table>
+<button onclick="createcurrent()">今月</button> <button onclick="createnext()">来月</button><br>
+<input type="text" size="2px" id="inyear">年
+<input type="text" size="2px" id="inmonth">月
+<input type="text" size="2px" id="indate">日
+<button onclick="setting()">設定</button>
+<script src="mission_5-1.js"></script>
+</body>
+</html>
